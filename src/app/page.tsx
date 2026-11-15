@@ -19,19 +19,30 @@ export default function Home() {
         color: "#1c1917",
       }}
     >
-      <p style={{ letterSpacing: "0.14em", textTransform: "uppercase", fontSize: 12, color: "#78716c" }}>
+      <p
+        style={{
+          letterSpacing: "0.14em",
+          textTransform: "uppercase",
+          fontSize: 12,
+          color: "#78716c",
+        }}
+      >
         Read-only MCP server
       </p>
-      <h1 style={{ fontSize: 42, lineHeight: 1.15, margin: "8px 0 20px" }}>Bible Ontology</h1>
+      <h1 style={{ fontSize: 42, lineHeight: 1.15, margin: "8px 0 20px" }}>
+        Bible Ontology
+      </h1>
       <p style={{ fontSize: 18 }}>
-        A knowledge graph of the Bible&apos;s text: people, events, places, ideas and words, and the
-        relations between them, each citing its verse. It states what the text says, marks readings as
-        readings, and takes no doctrinal position.
+        A knowledge graph of the Bible&apos;s text: people, events, places,
+        ideas and words, and the relations between them, each citing its verse.
+        It states what the text says, marks readings as readings, and takes no
+        doctrinal position.
       </p>
       <h2 style={{ marginTop: 40, fontSize: 22 }}>Connect</h2>
       <p>
-        The MCP endpoint is <code style={code}>/mcp</code> (Streamable HTTP). Point a client at{" "}
-        <code style={code}>http://localhost:3000/mcp</code>.
+        The MCP endpoint is <code style={code}>/mcp</code> (Streamable HTTP).
+        Point a client at{" "}
+        <code style={code}>https://ontology.jesus.technology/mcp</code>.
       </p>
       <h2 style={{ marginTop: 40, fontSize: 22 }}>Tools</h2>
       <ul style={{ paddingLeft: 20 }}>
@@ -50,8 +61,9 @@ export default function Home() {
         ))}
       </ul>
       <p style={{ marginTop: 48, fontSize: 14, color: "#57534e" }}>
-        The graph: Bible Ontology (bibleontology.org), CC BY 4.0. Its sources keep their own terms,
-        credited in every answer. The Berean Standard Bible is public domain.
+        The graph: Bible Ontology (bibleontology.org), CC BY 4.0. Its sources
+        keep their own terms, credited in every answer. The Berean Standard
+        Bible is public domain.
       </p>
     </main>
   );

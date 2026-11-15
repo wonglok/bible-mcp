@@ -11,3 +11,4 @@ xmcp-env.d.ts
 __pycache__/
 
 .env.local
+.vercel
