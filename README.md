@@ -12,8 +12,8 @@ link is a reading rather than a statement of the text, it says so.
 - Tools: `start`, `search`, `fetch`, `get_relations`, `get_verse`, `get_word`.
 - Resources: `bibleontology://about`, `method`, `licensing`, `version`.
 - Data: a snapshot in `ontology-data/` (plain JSON), also seedable into MongoDB.
-- **Production:** <https://bible-mcp-alpha.vercel.app> — MCP at
-  <https://bible-mcp-alpha.vercel.app/mcp> (Vercel project `wonglok/bible-mcp`).
+- **Production:** <https://mcp.jesus.technology/mcp> (custom domain) and
+  <https://bible-mcp-alpha.vercel.app/mcp> — Vercel project `wonglok/bible-mcp`.
   Vercel serves the JSON snapshot shipped with the `/mcp` function
   (`outputFileTracingIncludes` in `next.config.ts`); a local MongoDB is not
   reachable from there.
