@@ -12,6 +12,11 @@ link is a reading rather than a statement of the text, it says so.
 - Tools: `start`, `search`, `fetch`, `get_relations`, `get_verse`, `get_word`.
 - Resources: `bibleontology://about`, `method`, `licensing`, `version`.
 - Data: a snapshot in `ontology-data/` (plain JSON), also seedable into MongoDB.
+- **Production:** <https://bible-mcp-alpha.vercel.app> — MCP at
+  <https://bible-mcp-alpha.vercel.app/mcp> (Vercel project `wonglok/bible-mcp`).
+  Vercel serves the JSON snapshot shipped with the `/mcp` function
+  (`outputFileTracingIncludes` in `next.config.ts`); a local MongoDB is not
+  reachable from there.
 
 ## Quick start
 
@@ -95,6 +100,10 @@ memory, so every answer is still a lookup. See `.env.example`.
 npm start            # one terminal
 npm run verify       # smoke-test every tool, cursor, error path and resource
 npm run diff         # compare 22 answers with app2/mcp.py, field by field
+
+# the same checks against the deployment
+MCP_URL=https://bible-mcp-alpha.vercel.app/mcp npm run verify
+MCP_URL=https://bible-mcp-alpha.vercel.app/mcp npm run diff
 ```
 
 `scripts/reference-diff.py` loads the site's own data and MCP core and diffs the

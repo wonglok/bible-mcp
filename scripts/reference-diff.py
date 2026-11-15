@@ -14,6 +14,7 @@ sources/credit/data_version equal is expected to match whole.
 from __future__ import annotations
 
 import json
+import os
 import sys
 import urllib.request
 from pathlib import Path
@@ -28,7 +29,7 @@ import server  # noqa: E402
 import mcp  # noqa: E402
 import mcp_backend  # noqa: E402
 
-URL = "http://127.0.0.1:3000/mcp"
+URL = os.environ.get("MCP_URL", "http://127.0.0.1:3000/mcp")
 
 CALLS = [
     ("start", {}),
