@@ -32,6 +32,9 @@ For development:
 npm run dev         # xmcp dev + next dev
 ```
 
+A local client is already registered in `.mcp.json` as **`bible-mcp-local`**
+(`http://localhost:3000/mcp`); approve it once in your MCP client.
+
 Try it:
 
 ```bash
