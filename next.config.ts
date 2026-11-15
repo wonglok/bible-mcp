@@ -1,10 +1,11 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  // The ontology snapshot is read from disk at run time; keep it out of the
-  // bundle so a large data file is not traced into every function.
-  outputFileTracingExcludes: {
-    "/*": ["./ontology-data/**"],
+  // The MCP route reads the ontology snapshot from disk at run time. Ship the
+  // snapshot with that route's serverless function so `process.cwd()/ontology-data`
+  // resolves on Vercel. No other route needs it.
+  outputFileTracingIncludes: {
+    "/mcp": ["./ontology-data/**"],
   },
 };
 

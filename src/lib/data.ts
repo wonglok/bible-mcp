@@ -137,9 +137,9 @@ export type Snapshot = {
   entities: Record<string, Entity>;
 };
 
-const DATA_DIR =
-  process.env.BIBLE_MCP_DATA ??
-  path.join(/* turbopackIgnore: true */ process.cwd(), "ontology-data");
+const DATA_DIR = process.env.BIBLE_MCP_DATA
+  ? path.resolve(process.env.BIBLE_MCP_DATA)
+  : path.join(process.cwd(), "ontology-data");
 
 function readJson<T>(name: string): T {
   const file = path.join(DATA_DIR, name);
