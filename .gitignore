@@ -1,0 +1,13 @@
+node_modules/
+.next/
+.xmcp/
+next-env.d.ts
+xmcp-env.d.ts
+*.tsbuildinfo
+.DS_Store
+
+# Build artefacts and the local Python venv, if kept beside the project
+.venv/
+__pycache__/
+
+.env.local
