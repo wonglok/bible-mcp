@@ -65,6 +65,11 @@ The export uses the reference implementation as the oracle (it imports `app2/ser
 so the site's grouping, hop inputs and word fields are exactly its own. Files are plain
 JSON; no `.gz` files are read or written.
 
+`export-ontology-data.py` and `reference-diff.py` read the site from the parent
+`bibleontology-main` checkout (`app2/`, `src/`, `ontology/`, `out/`). The committed
+`ontology-data/` snapshot is enough to run and verify the server; regenerating it needs
+that checkout.
+
 ## MongoDB (optional)
 
 MongoDB Community is installed on this machine (`/opt/homebrew/bin/mongod`) and Mongoose
