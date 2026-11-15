@@ -42,7 +42,7 @@ export default function Home() {
       <p>
         The MCP endpoint is <code style={code}>/mcp</code> (Streamable HTTP).
         Point a client at{" "}
-        <code style={code}>https://mcp.jesus.technology/mcp</code>.
+        <code style={code}>https://bible.ontology.jesus.technology/mcp</code>.
       </p>
       <h2 style={{ marginTop: 40, fontSize: 22 }}>Tools</h2>
       <ul style={{ paddingLeft: 20 }}>
